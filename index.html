@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ElectronicFinds.com – Best Electronics Deals & Reviews</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg: #f8f7f4; --white: #ffffff; --surface: #f2f0ec; --text: #1a1814;
+  --text2: #4a4640; --muted: #8a8480; --accent: #e05c2a; --border: #e4e0da;
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;line-height:1.6;}
+nav{position:sticky;top:0;z-index:200;background:rgba(248,247,244,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 5%;height:68px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Playfair Display',serif;font-weight:800;font-size:1.4rem;color:var(--text);text-decoration:none;}
+.nav-logo em{color:var(--accent);font-style:normal;}
+.hero{background:var(--white);padding:6rem 5%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;border-bottom:1px solid var(--border);}
+@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;}}
+.hero-title{font-family:'Playfair Display',serif;font-size:3rem;line-height:1.1;margin-bottom:1.25rem;}
+.hero-sub{color:var(--text2);margin-bottom:2rem;max-width:50ch;}
+.hero-img{width:100%;border-radius:20px;box-shadow:var(--shadow-lg);}
+.disclosure{background:var(--surface);padding:1.5rem 5%;text-align:center;font-size:0.85rem;color:var(--muted);border-bottom:1px solid var(--border);}
+.products-section{padding:5rem 5%;}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem;}
+.product-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:0.3s;}
+.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);}
+.product-img{width:100%;aspect-ratio:1/1;object-fit:contain;padding:20px;background:#fff;}
+.product-body{padding:1.5rem;}
+.product-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;}
+.product-desc{font-size:0.85rem;color:var(--text2);margin-bottom:1.5rem;height:4.5em;overflow:hidden;}
+.product-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding-top:1rem;}
+.buy-btn{background:var(--accent);color:#fff;padding:0.6rem 1.2rem;border-radius:50px;text-decoration:none;font-weight:600;font-size:0.8rem;}
+footer{background:var(--text);color:#fff;padding:3rem 5%;text-align:center;font-size:0.8rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">Electronic<em>Finds</em>.com</a>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1 class="hero-title">Premium Tech Picks <br><span style="color:var(--accent)">Hand-Selected.</span></h1>
+    <p class="hero-sub">We browse thousands of Amazon listings to find the highest-rated electronics so you don't have to.</p>
+    <a href="#grid" class="buy-btn" style="padding:1rem 2rem; font-size:1rem;">Explore the Collection</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800" class="hero-img" alt="Tech Hub">
+</section>
+
+<div class="disclosure">
+  <strong>Affiliate Disclosure:</strong> ElectronicFinds.com is an Amazon Associate. We earn from qualifying purchases at no extra cost to you.
+</div>
+
+<section class="products-section" id="grid">
+  <div class="products-grid">
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61NlU96F2fL._AC_SL1500_.jpg" class="product-img" alt="MacBook Case">
+      <div class="product-body">
+        <div class="product-name">BlueSwan Matte MacBook Case</div>
+        <p class="product-desc">Ultra-slim matte hard shell case for 360-degree protection. Includes matching keyboard cover.</p>
+        <div class="product-footer">
+          <span style="font-weight:bold;">Check Price</span>
+          <a href="https://www.amazon.com/s?k=BlueSwan+MacBook+Case" target="_blank" class="buy-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51SKmu2G9FL._AC_SL1500_.jpg" class="product-img" alt="Sony Headphones">
+      <div class="product-body">
+        <div class="product-name">Sony WH-1000XM5 Wireless</div>
+        <p class="product-desc">Industry-leading noise canceling headphones with 30-hour battery life and crystal clear calling.</p>
+        <div class="product-footer">
+          <span style="font-weight:bold;">Top Pick</span>
+          <a href="https://www.amazon.com/s?k=Sony+WH-1000XM5" target="_blank" class="buy-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71X8X8K7+iL._AC_SL1500_.jpg" class="product-img" alt="Mechanical Keyboard">
+      <div class="product-body">
+        <div class="product-name">Logitech MX Mechanical Mini</div>
+        <p class="product-desc">Low-profile mechanical switches designed for productivity and tactile typing feel.</p>
+        <div class="product-footer">
+          <span style="font-weight:bold;">Bestseller</span>
+          <a href="https://www.amazon.com/s?k=Logitech+MX+Mechanical" target="_blank" class="buy-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61vY4pE+LUL._AC_SL1500_.jpg" class="product-img" alt="Kindle Paperwhite">
+      <div class="product-body">
+        <div class="product-name">Kindle Paperwhite (16 GB)</div>
+        <p class="product-desc">Now with a 6.8" display and adjustable warm light. Waterproof and built for reading.</p>
+        <div class="product-footer">
+          <span style="font-weight:bold;">Great Value</span>
+          <a href="https://www.amazon.com/s?k=Kindle+Paperwhite" target="_blank" class="buy-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61Y9m5-I6mL._AC_SL1500_.jpg" class="product-img" alt="Apple Watch">
+      <div class="product-body">
+        <div class="product-name">Apple Watch Series 10</div>
+        <p class="product-desc">The most advanced health tracking on your wrist with a larger, brighter Always-On Retina display.</p>
+        <div class="product-footer">
+          <span style="font-weight:bold;">Trending</span>
+          <a href="https://www.amazon.com/s?k=Apple+Watch+Series+10" target="_blank" class="buy-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71Zf9uUp+GL._AC_SL1500_.jpg" class="product-img" alt="Portable Charger">
+      <div class="product-body">
+        <div class="product-name">Anker MagGo Power Bank</div>
+        <p class="product-desc">Ultra-fast wireless charging with a built-in stand. The perfect travel companion for iPhone.</p>
+        <div class="product-footer">
+          <span style="font-weight:bold;">Must-Have</span>
+          <a href="https://www.amazon.com/s?k=Anker+MagGo" target="_blank" class="buy-btn">View Deal</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 ElectronicFinds.com - All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
